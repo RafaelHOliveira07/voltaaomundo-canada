@@ -8,7 +8,14 @@
     
 }
 
-body,.carousel,.dark-fade  {
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel,.dark-fade  {
    
     width: 100%;
    
@@ -26,7 +33,7 @@ body,.carousel,.dark-fade  {
     
 
 .carousel{
-    position: absolute;
+   
     
     background-size: cover;
     background-position: center;
@@ -233,6 +240,18 @@ nav a{
     padding-left: 10rem;
     gap: 1rem;
     
+}
+
+
+.sec-link1{
+    width: 100%;
+    height: 30rem;
+    background-color: red;
+}
+.sec-link2{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(255, 255, 255);
 }
 
 @media (max-width: 991px) {
