@@ -352,6 +352,77 @@
       box-shadow: 10px 10px 10px rgba(38, 38, 38, 0.346);
       
     }
+
+    footer{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 15rem;
+      background-color: rgb(20, 20, 20);
+      gap: 1rem;
+
+    }
+    footer h3{
+      color: #fff;
+    }
+
+    footer p{
+      font-size: xx-small;
+      margin-bottom: 0;
+    }
+    .redes {
+
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 4rem;
+    
+    }
+    
+    .redes .fa {
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.692);
+      font-size: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 20rem;
+      text-decoration: none;
+      filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.555));
+      text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.678);
+      transition: 0.4s ease-in-out;
+      transform: scale(1.2);
+    
+    
+    }
+    
+    
+    .fa:hover {
+    
+      border-color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+      background-color: rgb(124, 17, 17);
+      transform: scale(1.4);
+    
+    
+    }
+    
+    
+    .fa-facebook,
+    .fa-instagram,
+    .fa-twitter {
+    
+      background: rgb(22, 22, 22);
+      color: rgb(172, 6, 6);
+    
+    
+    }
+
+    
     @media (max-width: 1500px) {
 
       .sec-link1,.sec-link2{
