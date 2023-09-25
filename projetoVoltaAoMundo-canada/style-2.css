@@ -3,7 +3,8 @@
 
 header{
     position: relative;
-    background-color: rgb(111, 0, 0);
+    background-color: rgb(117, 7, 7);
+    border: none;
 
 } 
 .img-inicio{
@@ -59,6 +60,11 @@ aside{
     max-width: 100%;
     width: 50rem;
 
+
+}
+
+#center{
+    width: 100%;
 }
 
 .text-1{
@@ -75,10 +81,12 @@ aside{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    
 }
 
 .img-cont img{
 
+    padding: 1rem;
    width: 50rem;
    height: 100%;
    object-fit: cover;
@@ -93,4 +101,19 @@ aside{
     justify-content: space-around;
     display: flex;
    
+}
+
+@media (max-width: 1200px){
+    .text-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    aside{
+        width: 100%;
+    }
+
+    aside h2{
+        text-align: center;
+    }
 }
