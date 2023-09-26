@@ -671,4 +671,14 @@
         }
 
 
+        .reveal{
+          position: relative;
+          transform: translatey(25px);
+          opacity: 0;
+          transition: all 1s ease;
+        }
         
+        .reveal.active{
+          transform: translatey(0px);
+          opacity: 1;
+        }
