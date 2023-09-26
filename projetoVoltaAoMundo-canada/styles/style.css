@@ -2,7 +2,7 @@
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-
+         
 
           transition: 0.4s;
 
@@ -153,15 +153,28 @@
           color: rgb(255, 255, 255);
           font-size: 1rem;
           font-weight: bolder;
-          letter-spacing: 5px;
+          letter-spacing: 10px;
           display: flex;
           margin-top: 5px;
           text-decoration: none;
           font-variant: small-caps;
+          text-align: left;
+          
 
 
 
         }
+
+        header h1 a:hover {
+
+         text-decoration: none;
+         color: rgb(255, 255, 255) ;
+         
+
+
+
+        }
+
 
 
         .logo-canada {
@@ -171,12 +184,18 @@
           flex-direction: row;
           gap: 10px;
           padding-left: 2vw;
+          text-align: left;
+          filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.554));
 
         }
 
         .logo-canada img {
 
           width: calc(2.5rem + 1vw);
+          border: 2px dashed #ffffff;
+          border-radius: 10rem;
+          padding: 2px;
+          object-fit: cover;
 
         }
 
@@ -446,7 +465,7 @@
 
         .fa-facebook,
         .fa-instagram,
-        .fa-twitter {
+        .fa-github {
 
           background: rgb(22, 22, 22);
           color: rgb(255, 255, 255);

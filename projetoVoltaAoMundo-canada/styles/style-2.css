@@ -1,6 +1,10 @@
 
 
 
+body{
+    background-color: rgb(203, 203, 203);
+}
+
 header{
     position: relative;
     background-color: rgb(117, 7, 7);
@@ -9,6 +13,7 @@ header{
 } 
 #historia{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/historia-canada-2-640x320.webp');
+
 }
 #culinaria{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/panquecaG.jpeg');
@@ -18,7 +23,15 @@ header{
 #turismo{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/main-canada-b311bbcf908341109fe08e8027cd8351.jpg');
     background-position: center ;
+    
    }
+
+   #curiosidade{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/nascer-do-sol-de-toronto.jpg');
+    background-position: center ;
+    
+   }
+
 .img-inicio{
 
   
@@ -38,6 +51,7 @@ header{
     font-size: 5rem;
     letter-spacing: 5px;
     color: #fff;
+    font-variant: small-caps;
 
 }
 
@@ -53,14 +67,23 @@ header{
     height: 100%;
     width: 80rem;
     max-width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
 
 }
 
-.container-fluid h2,h3{
+.container-fluid h2{
     padding: 1rem;
     color: rgb(133, 3, 3);
     font-size: 2rem;
+    font-variant: small-caps;
+}
 
+.container-fluid h1{
+    font-size: 2.5rem;
+    color: rgb(133, 3, 3);
+    font-variant: small-caps;
+   
 }
 
 .container-fluid p{
@@ -76,7 +99,13 @@ header{
 
 
 .center{
-    max-width: 100%;
+    
+  
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     
     
     
@@ -85,7 +114,8 @@ header{
 
 
 .text-1{
-    width: 100%;
+    max-width: 100%;
+    width: 80rem;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -116,11 +146,20 @@ header{
     
     
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
 
   
    
+}
+
+
+.container-fluid ul li{
+    color: rgb(139, 15, 15) ;
+    list-style: decimal;
+    font-weight: bolder;
+    font-size: larger;
+
 }
 
 @media (max-width: 1200px){
@@ -129,9 +168,7 @@ header{
         flex-direction: column;
         justify-content: center;
     }
-    aside{
-        width: 100%;
-    }
+  
 
     aside h2{
         text-align: center;
