@@ -48,10 +48,11 @@ header{
 
 .img-inicio h1{
 
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 5px;
     color: #fff;
     font-variant: small-caps;
+    max-width: 100%;
 
 }
 
