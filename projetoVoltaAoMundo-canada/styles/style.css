@@ -235,13 +235,13 @@
           letter-spacing: 2px;
           color: rgb(255, 255, 255);
           font-weight: bolder;
-
+          
 
         }
 
         .text h2 {
-
-          font-size: 4rem;
+          font-size: clamp(2em, 1em + 7vw, 5em);
+        
         }
 
         .text p {
@@ -344,7 +344,7 @@
 
         .sec-link2 h2 {
 
-          font-size: 3rem;
+          font-size: clamp(1em, 1em + 7vw, 5em);
           font-weight: bolder;
           letter-spacing: 5px;
           display: flex;
