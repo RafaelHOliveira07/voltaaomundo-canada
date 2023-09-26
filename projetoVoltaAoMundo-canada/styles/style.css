@@ -688,4 +688,5 @@
         .reveal.active {
           transform: translatey(0px);
           opacity: 1;
+          
         }
