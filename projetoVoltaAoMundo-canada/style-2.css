@@ -46,7 +46,7 @@ header{
     align-items: center;
     padding: 2rem;
     height: 100%;
-    width: 90rem;
+    width: 80rem;
     max-width: 100%;
 }
 
@@ -58,22 +58,22 @@ header{
 }
 
 .container-fluid p{
-   
-    letter-spacing: 1px;
-    padding: 1rem;
-    color: rgb(0, 0, 0);
-}
-aside{
-
     max-width: 100%;
-    width: 60rem;
-
+    width: 55rem;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+ 
 
 }
 
-#center{
-    width: 100%;
-}
+
+.center{
+    max-width: 100%;
+    
+ }
+
+
 
 .text-1{
     width: 100%;
@@ -94,18 +94,17 @@ aside{
 }
 
 .img-cont img{
-
-   width: 50rem;
-   height: 100%;
-   object-fit: cover;
-
+    width: 50rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.374);
 }
 
 .text-img{
     
     
     width: 100%;
- 
     justify-content: space-around;
     display: flex;
    
