@@ -8,15 +8,15 @@ header{
 
 } 
 #historia{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('img/historia-canada-2-640x320.webp');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/historia-canada-2-640x320.webp');
 }
 #culinaria{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('img/panquecaG.jpeg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/panquecaG.jpeg');
     background-position: center;
 }
 
 #turismo{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('img/main-canada-b311bbcf908341109fe08e8027cd8351.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.749)), url('../img/main-canada-b311bbcf908341109fe08e8027cd8351.jpg');
     background-position: center ;
    }
 .img-inicio{
