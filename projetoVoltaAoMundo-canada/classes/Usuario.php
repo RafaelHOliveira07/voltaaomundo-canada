@@ -15,13 +15,13 @@ class Usuario {
         }
     }
 
-    public function inserir(){
-        $sql = "INSERT INTO tb_usuarios (id,usuario,senha) VALUES ('{$this->usuario}', '{$this->senha}')";
+    public function Inserir(){
+
+        $sql = "INSERT INTO tb_usuarios (usuario,senha) VALUES ('{$this->usuario}', '{$this->senha}')";
         include_once "classes/conexao.php";
         $conexao->exec($sql);
         echo "Registro gravado com sucesso!";
     }
 
 }
-
  ?>

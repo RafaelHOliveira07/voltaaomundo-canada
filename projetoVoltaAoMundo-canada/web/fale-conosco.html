@@ -23,6 +23,7 @@
 
 
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/style-form.css">
   <link rel="stylesheet" href="../styles/style-2.css">
 </head>
 
@@ -82,13 +83,62 @@
 
   </section>
   <main class="container-fluid">
+        
+    <section class="form container">
+        
+        <div class="content">
+            
+            <h1 class="section_title"><i class="icon icon-file-text-1"></i> Fale Conosco</h1>
+            
+            <div class="box-artigo">
+                
+            <div class="formularioContato">
+                
+                <form action="../gravar-mensagem.php" method="post" enctype="multipart/form-data">
 
-    
+                    <label>
+                        <span><i class="icon icon-user-1"></i> Nome</span>
+                        <input type="text" name="nome" required="">
+                    </label>
+                    
+                    <label>
+                        <span><i class="icon icon-email"></i> E-mail</span>
+                        <input type="text" name="email" class="fade_8S">
+                    </label>
+
+                    <label>
+                        <span><i class="icon icon-flag"></i> Assunto</span>
+                        <input type="text" name="assunto" required="">
+                    </label>
+                    
+                    <label>
+                        <span><i class="icon icon-comment"></i> Mensagem</span>
+                         <textarea name="mensagem" rows="3" required=""></textarea> 
+                    </label>
+                   
+                    <input type="hidden" name="acao" value="enviar" />
+                    <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+
+                
+                </form>
+
+            </div><!--Formulario Contato-->
+
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--FECHA BOX HTML-->
+
+
+    </section><!--FECHA BOX SEU DOWNLOAD-->
+
+</main>
 
 
 
-
-  </main>
   <footer>
     <h3>Redes Sociais</h3>
     <div class="redes reveal">
@@ -101,6 +151,8 @@
     <p>pagina web desenvolvida por Rafael Henrique de Oliveira.</p>
   </footer>
   <script type="text/javascript" src="../js/reveal.js"></script>
+  <script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
