@@ -27,6 +27,6 @@ if ($usuario_logado == null) {
 else {
 	session_start();
 	$_SESSION['usuario_logado'] = $usuario_logado;
-	header('Location: ./web/adm-index.html');
+	header('Location: ./web/adm-index.php');
 }
 ?>

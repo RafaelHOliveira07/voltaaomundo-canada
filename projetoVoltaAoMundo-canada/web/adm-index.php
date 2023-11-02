@@ -1,3 +1,11 @@
+<?php
+    require_once "../classes/Mensagem.php";
+    $mensagem = new Mensagem();
+    $lista = $mensagem->listar();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +16,7 @@
     <!-- Link para o Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-table.css">
     <style>
         .admin-content {
             margin-top: 50px;
@@ -37,36 +46,34 @@
     </nav>
 
     <!-- Conteúdo da Área Administrativa -->
-    <div class="container admin-content">
+    <div class="container-fluid admin-content">
         <h2>Lista de perguntas </h2>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Pergunta</th>
-                    <th scope="col">Estado</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Assunto</th>
+                    <th scope="col">Mensagem</th>
                 </tr>
             </thead>
             <tbody>
+                <?php foreach ($lista as $linha):?>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>John Doe</td>
-                    <td>john.doe@example.com</td>
-                    <td>Gerente</td>
+                  
+                    <td><?php echo $linha['id_mensagem']?></td>
+                    <td><?php echo $linha['nome']?></td>
+                    <td><?php echo $linha['email']?></td>
+                    <td><?php echo $linha['assunto']?>
+                    <td><?php echo $linha['mensagem']?></td>
+          
+                    <td class="act">
+                        <a href="#">Responder</a>
+                        <a href="#">Ocultar</a>
+                    </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jane Smith</td>
-                    <td>jane.smith@example.com</td>
-                    <td>Administrador</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Bob Johnson</td>
-                    <td>bob.johnson@example.com</td>
-                    <td>Usuário</td>
-                </tr>
+                <?php endforeach ?>
             </tbody>
         </table>
     </div>
