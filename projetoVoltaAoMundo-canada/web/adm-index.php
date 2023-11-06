@@ -59,6 +59,7 @@
                 </tr>
             </thead>
             <tbody>
+           
                 <?php foreach ($lista as $linha):?>
                 <tr>
                   
@@ -69,8 +70,12 @@
                     <td><?php echo $linha['mensagem']?></td>
           
                     <td class="act">
-                        <a href="#">Responder</a>
-                        <a href="#">Ocultar</a>
+                    <a href="resposta.php?id_mensagem=<?php echo $linha['id_mensagem']; ?>">Responder</a>
+                <a href="#">Ocultar</a>
+             
+                
+                   
+                       
                     </td>
                 </tr>
                 <?php endforeach ?>
