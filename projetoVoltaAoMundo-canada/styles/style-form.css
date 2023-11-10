@@ -105,7 +105,7 @@ form{
 .formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(231, 178, 178); border:1px rgb(230, 50, 37) solid; }
 .formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(231, 178, 178); border:1px rgb(230, 53, 37) solid; color:rgb(0, 0, 0);}
 
-button,a { 
+button { 
 
     background-color:rgb(173, 20, 20); 
     width:30%; display:block; 

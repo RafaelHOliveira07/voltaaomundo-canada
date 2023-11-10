@@ -32,6 +32,9 @@ header{
     
    }
 
+
+
+
 .img-inicio{
 
   
@@ -160,6 +163,19 @@ header{
     font-weight: bolder;
     font-size: larger;
 
+}
+
+.respostas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+ th.red{
+    background-color: rgb(153, 4, 4);
+    color: #fff;
 }
 
 @media (max-width: 1200px){

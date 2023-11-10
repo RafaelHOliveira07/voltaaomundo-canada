@@ -29,13 +29,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/style-form.css">
   <link rel="stylesheet" href="../styles/style-2.css">
-  <link rel="stylesheet" href="../styles/style-table.css">
+
 </head>
 
 <body>
@@ -91,11 +91,7 @@
 
 
 
-  <section class="img-inicio" id="curiosidade">
 
-    <h1>Curiosidades</h1>
-
-  </section>
   <main class="container-fluid">
         
     <section class="form container">
@@ -143,23 +139,26 @@
                 <section class="respostas">
 
                   <h2>Ultimas mensagens respondidas:</h2>
-<table>
+                      <table class="table">
+                      <?php foreach ($resposta as $linha):?>
+                      <thead class="thead-dark">
+                          <th  ><span>Mensagem do <?php echo $linha['remetente'] ?></span>
+                                          <tr>
+                                          <td><?php echo $linha['mensagem'] ?></td>
+                                          
+                                        </tr>
+                                        </thead>
+                                        <thead >
+                                            <th class="red">Resposta:</th> <tr>
+                                        </thead>
+                                        <td><?php echo $linha['Resposta'] ?></td>
 
-                  <?php foreach ($resposta as $linha):?>
-                    <th><span>Mensagem do <?php echo $linha['remetente'] ?></span>
-                    <tr>
-                    <td><?php echo $linha['mensagem'] ?></td>
-                    
-                  </tr>
-                   
-                      <th>Resposta</th> <tr>
-                  <td><?php echo $linha['Resposta'] ?></td>
-
-                      </tr>
-            
-                  
-                  <?php endforeach ?>
-</table>
+                                            </tr>                
+                                  
+                                        
+                      <?php endforeach ?>
+                              
+                      </table>
 
                 </section>
 
