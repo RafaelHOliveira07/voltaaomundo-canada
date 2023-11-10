@@ -1,3 +1,13 @@
+<?php
+    require_once "../classes/Mensagem.php";
+    $mensagem = new Mensagem();
+    $resposta = $mensagem->listMessages();
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -25,6 +35,7 @@
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/style-form.css">
   <link rel="stylesheet" href="../styles/style-2.css">
+  <link rel="stylesheet" href="../styles/style-table.css">
 </head>
 
 <body>
@@ -51,7 +62,7 @@
 
       <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav ml-auto text-uppercase f1">
-          <li>
+        <li>
             <a href="index.html">Home</a>
           </li>
           <li>
@@ -65,6 +76,9 @@
           </li>
           <li>
             <a href="curiosidades.html">Curiosidades</a>
+          </li>
+          <li>
+            <a href="fale-conosco.php">Fale-conosco</a>
           </li>
 
         </ul>
@@ -113,27 +127,41 @@
                     
                     <label>
                         <span><i class="icon icon-comment"></i> Mensagem</span>
-                         <textarea name="mensagem" rows="3" required=""></textarea> 
+                         <textarea class="fale" name="mensagem" rows="3" required=""></textarea> 
                     </label>
                    
-                    <input type="hidden" name="acao" value="enviar" />
+                   
                     <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
 
                 
                 </form>
 
-            </div><!--Formulario Contato-->
 
+       
 
-            </div><!--Box Artigo-->
-
-
-        <div class="clear"></div>
         </div>
-    </section><!--FECHA BOX HTML-->
+                <section class="respostas">
 
+                  <h2>Ultimas mensagens respondidas:</h2>
+<table>
 
-    </section><!--FECHA BOX SEU DOWNLOAD-->
+                  <?php foreach ($resposta as $linha):?>
+                    <th><span>Mensagem do <?php echo $linha['remetente'] ?></span>
+                    <tr>
+                    <td><?php echo $linha['mensagem'] ?></td>
+                    
+                  </tr>
+                   
+                      <th>Resposta</th> <tr>
+                  <td><?php echo $linha['Resposta'] ?></td>
+
+                      </tr>
+            
+                  
+                  <?php endforeach ?>
+</table>
+
+                </section>
 
 </main>
 

@@ -14,6 +14,7 @@
 
   <!-- Estilos customizados para esse template -->
   <link href="https://getbootstrap.com.br/docs/4.1/examples/sign-in/signin.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style-form.css">
   <script type="text/javascript">
     function validaCampo() {
       if (document.login.usuario.value == "") {
@@ -40,7 +41,7 @@
     <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha">
     <div class="checkbox mb-3">
   
-    <button class="btn btn-lg btn-dark btn-block" type="submit">Cadastrar</button>
+    <button type="submit">Cadastrar</button>
     <p class="mt-5 mb-3 text-muted">&copy; Area adminstrativa Projeto Portal - Canada 2023</p>
   </form>
 </body>

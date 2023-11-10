@@ -9,6 +9,7 @@
   <!-- Estilos customizados para esse template -->
   <link href="https://getbootstrap.com.br/docs/4.1/examples/sign-in/signin.css" rel="stylesheet">
 </head>
+<link rel="stylesheet" href="../styles/style-form.css">
 <body class="text-center flex-column">
     <h3 class="h3 mb-4 font-weight-normal">Acesso Negado</h3>
     <p class="lead">Usuário ou senha inválido</p>

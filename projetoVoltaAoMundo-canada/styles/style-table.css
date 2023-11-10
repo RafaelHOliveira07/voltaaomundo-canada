@@ -4,7 +4,24 @@
     border-collapse: collapse;
     border-spacing: 0;
     font-family: arial;
-  
+
+}
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+margin-right: 3rem;
+  gap: 2rem;
+}
+
+.logo-canada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+ 
+}
+.logo-canada>p{
+  margin-top: 1rem;
 }
 
 .admin-content{
@@ -27,4 +44,8 @@ table td {
   vertical-align: middle;
  
 
+}
+
+img{
+  width: 3rem;
 }
