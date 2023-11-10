@@ -44,7 +44,7 @@
   <header>
 
     <div class="logo-canada">
-      <img src="img/canada.png" alt="">
+      <img src="../img/canada.png" alt="">
       <span></span>
       <h1> <a href="index.html">PORTAL <br> CANADA</a> </h1>
     </div>
